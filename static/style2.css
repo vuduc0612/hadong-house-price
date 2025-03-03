@@ -1,0 +1,111 @@
+/* Toàn bộ trang */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f6fc;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-image: linear-gradient(45deg, #4e73df, #1cc88a);
+    color: white;
+}
+
+/* Container trung tâm */
+.container {
+    width: 100%;
+    max-width: 600px;
+    padding: 30px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+/* Tiêu đề */
+h1 {
+    font-size: 32px;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+/* Label cho input */
+label {
+    font-size: 18px;
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 8px;
+    display: inline-block;
+}
+
+/* Input và các nút bấm */
+input, button {
+    width: 100%;
+    padding: 14px;
+    margin: 10px 0;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    font-size: 16px;
+    color: #555;
+    background-color: #f9f9f9;
+    box-sizing: border-box;
+}
+
+input:focus, button:focus {
+    outline: none;
+    border-color: #4e73df;
+}
+
+/* Nút bấm */
+button {
+    background-color: #4e73df;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+button:hover {
+    background-color: #3657a1;
+}
+
+/* Kết quả dự đoán */
+h2 {
+    font-size: 22px;
+    color: #333;
+    margin-top: 20px;
+}
+
+/* Hiệu ứng cho form */
+input, button {
+    transition: all 0.3s ease;
+}
+
+input:hover, button:hover {
+    transform: scale(1.05);
+}
+
+/* Thêm khoảng cách cho form */
+form {
+    padding: 20px;
+}
+
+/* Để kết quả dự đoán rõ ràng hơn */
+#result {
+    margin-top: 20px;
+    font-size: 24px;
+    font-weight: bold;
+    color: #28a745;
+}
+
+/* Khi có lỗi */
+#result.error {
+    color: #e74a3b;
+}
+
+/* Tạo khoảng cách hợp lý giữa các input */
+form > label,
+form > input {
+    margin-top: 10px;
+}
